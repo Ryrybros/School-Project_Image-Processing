@@ -1,0 +1,167 @@
+/* Styles for the app */
+
+/* ROOT */
+/* General style and colors for the app */
+.root {
+    -fx-font-size: 10pt;
+    -fx-base: rgb(50, 50, 50);
+    -fx-background: rgb(50, 50, 50);
+}
+
+/* MENUBAR */
+.menu-bar {
+    -fx-background: rgb(50,50,50);
+}
+
+/* TOOLBAR */
+
+.toolbar {
+    -fx-background-color: rgb(50,50,50);
+}
+
+/* Buttons of the toolbar */
+.toolbar .button {
+    -fx-background-color: rgb(0, 0, 0);
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-font-size: 11px;
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: rgb(255,255,255);
+}
+
+.toolbar .button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.8), 5, 0.5, 0, 0);
+    -fx-cursor: hand;
+}
+
+.toolbar .button:pressed {
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.8), 5, 0.8, 0, 0);
+}
+
+
+/* SCROLLBAR */
+
+.scrollbar {
+    -fx-background-color: rgb(50,50,50);
+}
+
+/* Buttons that shows options */
+.scrollbar .button {
+    -fx-background-color: rgb(100,100,100);
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-font-size: 12px;
+    -fx-background-radius: 7;
+    -fx-border-radius: 7;
+    -fx-border-color: rgb(255,255,255);
+}
+
+.scrollbar .button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.8), 4, 0.5, 0, 0);
+    -fx-cursor: hand;
+}
+
+.scrollbar .button:pressed {
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.8), 4, 0.8, 0, 0);
+}
+
+/* Buttons that apply options */
+.scrollbar .button-option {
+    -fx-background-color: rgb(100,100,100);
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-font-size: 11px;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: invisible;
+}
+
+.scrollbar .button-option:hover {
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.8), 4, 0.5, 0, 0);
+    -fx-cursor: hand;
+}
+
+.scrollbar .button-option:pressed {
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.8), 4, 0.8, 0, 0);
+}
+
+/* General labels of the scrollbars */
+.scrollbar .label {
+    -fx-font-size: 12px;
+    -fx-text-fill: rgb(255, 255, 255);
+}
+
+/* Labels linked to an option */
+.scrollbar .label-option {
+    -fx-font-size: 11px;
+    -fx-text-fill: rgb(255, 255, 255);
+}
+
+/* TextFields and NumberFields */
+.scrollbar .text-field {
+    -fx-background-color: rgb(200,200,200);
+}
+
+/* Sliders */
+.scrollbar .slider .track {
+    -fx-background-color: linear-gradient(to right, rgb(10, 20, 185), rgb(3, 5, 65));
+    -fx-background-insets: 0;
+    -fx-background-radius: 5;
+    -fx-min-height: 8px;
+}
+
+.scrollbar .slider .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.825);
+    -fx-background-radius: 50%;
+    -fx-pref-width: 16px;
+    -fx-pref-height: 16px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 3, 0, 0, 1);
+}
+
+.scrollbar .slider .thumb:hover {
+    -fx-background-color: rgb(255,255,255);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 2);
+}
+
+/* ColorPicker in DrawBar */
+.scrollbar .color-picker {
+    -fx-background-color: rgb(100,100,100);
+}
+
+.scrollbar .color-picker:hover {
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.8), 4, 0.5, 0, 0);
+    -fx-cursor: hand;
+}
+
+.scrollbar .color-picker:pressed {
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.8), 4, 0.8, 0, 0);
+}
+
+
+/* CENTERPANE */
+.center-pane {
+    -fx-background-color: rgb(50,50,50);
+}
+
+/* ScrollPane where the image and the stack are displayed */
+.center-pane .scroll-pane {
+    -fx-background-color: rgb(50,50,50);
+    -fx-border-color: rgb(255,255,255);
+}
+
+.center-pane .scroll-bar:horizontal .thumb,
+.center-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: rgb(255,255,255);
+}
+
+.center-pane .increment-button,
+.center-pane .decrement-button {
+    -fx-background-color: rgb(255,255,255);
+}
+
+/* Background of the image in the stack */
+.center-pane .stack-pane {
+    -fx-background-color: rgb(255,255,255);
+}
+
